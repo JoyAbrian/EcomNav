@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/navMenu"
+        android:title="Login"/>
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="Sign Up"/>
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="Cart"/>
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="Favourite"/>
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="Orders"/>
+
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="Categories"/>
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="Feedback"/>
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="Terms and Conditions"/>
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="ContactUs"/>
+
 </menu>
