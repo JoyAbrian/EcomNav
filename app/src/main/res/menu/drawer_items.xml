@@ -19,6 +19,14 @@
 
     <item
         android:id="@+id/navMenu"
+        android:title="On Going"/>
+
+    <item
+        android:id="@+id/navMenu"
+        android:title="History"/>
+
+    <item
+        android:id="@+id/navMenu"
         android:title="Feedback"/>
 
     <item
