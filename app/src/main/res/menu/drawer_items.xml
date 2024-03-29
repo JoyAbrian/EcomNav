@@ -6,7 +6,7 @@
 
         <item
             android:icon="@drawable/round_person"
-            android:id="@+id/login"
+            android:id="@+id/navProfile"
             android:title="My Profile"/>
 
     </group>
@@ -16,17 +16,17 @@
 
         <item
             android:icon="@drawable/round_home"
-            android:id="@+id/home"
+            android:id="@+id/navHome"
             android:title="Home"/>
 
         <item
             android:icon="@drawable/round_cart"
-            android:id="@+id/cart"
+            android:id="@+id/navCart"
             android:title="Cart"/>
 
         <item
             android:icon="@drawable/round_favorite"
-            android:id="@+id/favourite"
+            android:id="@+id/navFavourite"
             android:title="Favourite"/>
 
     </group>
@@ -36,12 +36,12 @@
 
         <item
             android:icon="@drawable/round_ongoing"
-            android:id="@+id/onGoing"
+            android:id="@+id/navOnGoing"
             android:title="On Going"/>
 
         <item
             android:icon="@drawable/round_history"
-            android:id="@+id/history"
+            android:id="@+id/navHistory"
             android:title="History"/>
 
     </group>
@@ -51,17 +51,17 @@
 
         <item
             android:icon="@drawable/round_feedback"
-            android:id="@+id/feedback"
+            android:id="@+id/navFeedback"
             android:title="Feedback"/>
 
         <item
             android:icon="@drawable/round_tnc"
-            android:id="@+id/tnc"
+            android:id="@+id/navTnc"
             android:title="Terms and Conditions"/>
 
         <item
             android:icon="@drawable/round_contactus"
-            android:id="@+id/contactUs"
+            android:id="@+id/navContactUs"
             android:title="Contact Us"/>
 
     </group>
