@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <include
-        layout="@layout/activity_main_content"/>
+        layout="@layout/activity_header"/>
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -20,5 +20,7 @@
         android:layout_gravity="start"
         app:itemIconPadding="30dp"
         app:dividerInsetStart="60dp"/>
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
