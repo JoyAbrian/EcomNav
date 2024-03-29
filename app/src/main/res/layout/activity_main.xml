@@ -10,7 +10,7 @@
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:menu=""
+        app:menu="@menu/drawer_items"
         app:headerLayout=""/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
