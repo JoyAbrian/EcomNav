@@ -1,49 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:icon="@drawable/round_login"
-        android:id="@+id/navMenu"
-        android:title="Login"/>
+    <group
+        android:id="@+id/group1">
 
-    <item
-        android:icon="@drawable/round_home"
-        android:id="@+id/navMenu"
-        android:title="Home"/>
+        <item
+            android:icon="@drawable/round_login"
+            android:id="@+id/navMenu"
+            android:title="Login"/>
 
-    <item
-        android:icon="@drawable/round_cart"
-        android:id="@+id/navMenu"
-        android:title="Cart"/>
+    </group>
 
-    <item
-        android:icon="@drawable/round_favorite"
-        android:id="@+id/navMenu"
-        android:title="Favourite"/>
+    <group
+        android:id="@+id/group2">
 
-    <item
-        android:icon="@drawable/round_ongoing"
-        android:id="@+id/navMenu"
-        android:title="On Going"/>
+        <item
+            android:icon="@drawable/round_home"
+            android:id="@+id/navMenu"
+            android:title="Home"/>
 
-    <item
-        android:icon="@drawable/round_history"
-        android:id="@+id/navMenu"
-        android:title="History"/>
+        <item
+            android:icon="@drawable/round_cart"
+            android:id="@+id/navMenu"
+            android:title="Cart"/>
 
-    <item
-        android:icon="@drawable/round_feedback"
-        android:id="@+id/navMenu"
-        android:title="Feedback"/>
+        <item
+            android:icon="@drawable/round_favorite"
+            android:id="@+id/navMenu"
+            android:title="Favourite"/>
 
-    <item
-        android:icon="@drawable/round_tnc"
-        android:id="@+id/navMenu"
-        android:title="Terms and Conditions"/>
+    </group>
 
-    <item
-        android:icon="@drawable/round_contactus"
-        android:id="@+id/navMenu"
-        android:title="ContactUs"/>
+    <group
+        android:id="@+id/group3">
+
+        <item
+            android:icon="@drawable/round_ongoing"
+            android:id="@+id/navMenu"
+            android:title="On Going"/>
+
+        <item
+            android:icon="@drawable/round_history"
+            android:id="@+id/navMenu"
+            android:title="History"/>
+
+    </group>
+
+    <group
+        android:id="@+id/group4">
+
+        <item
+            android:icon="@drawable/round_feedback"
+            android:id="@+id/navMenu"
+            android:title="Feedback"/>
+
+        <item
+            android:icon="@drawable/round_tnc"
+            android:id="@+id/navMenu"
+            android:title="Terms and Conditions"/>
+
+        <item
+            android:icon="@drawable/round_contactus"
+            android:id="@+id/navMenu"
+            android:title="Contact Us"/>
+
+    </group>
+
 
 </menu>
