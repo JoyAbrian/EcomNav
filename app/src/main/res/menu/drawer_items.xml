@@ -2,38 +2,47 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:icon="@drawable/round_login"
         android:id="@+id/navMenu"
         android:title="Login"/>
 
     <item
+        android:icon="@drawable/round_home"
         android:id="@+id/navMenu"
         android:title="Home"/>
 
     <item
+        android:icon="@drawable/round_cart"
         android:id="@+id/navMenu"
         android:title="Cart"/>
 
     <item
+        android:icon="@drawable/round_favorite"
         android:id="@+id/navMenu"
         android:title="Favourite"/>
 
     <item
+        android:icon="@drawable/round_ongoing"
         android:id="@+id/navMenu"
         android:title="On Going"/>
 
     <item
+        android:icon="@drawable/round_history"
         android:id="@+id/navMenu"
         android:title="History"/>
 
     <item
+        android:icon="@drawable/round_feedback"
         android:id="@+id/navMenu"
         android:title="Feedback"/>
 
     <item
+        android:icon="@drawable/round_tnc"
         android:id="@+id/navMenu"
         android:title="Terms and Conditions"/>
 
     <item
+        android:icon="@drawable/round_contactus"
         android:id="@+id/navMenu"
         android:title="ContactUs"/>
 
