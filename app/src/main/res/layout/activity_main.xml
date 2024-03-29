@@ -17,6 +17,8 @@
         android:layout_height="match_parent"
         app:menu="@menu/drawer_items"
         app:headerLayout="@layout/drawer_header"
-        android:layout_gravity="start"/>
+        android:layout_gravity="start"
+        app:itemIconPadding="30dp"
+        app:dividerInsetStart="60dp"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
