@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton buttonDrawerToggle;
     NavigationView navigationView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,23 +40,23 @@ public class MainActivity extends AppCompatActivity {
                 int itemId = item.getItemId();
 
                 if (itemId == R.id.navProfile) {
-                    Toast.makeText(MainActivity.this, itemId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "profile", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navHome) {
-                    Toast.makeText(MainActivity.this, itemId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "home", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navCart) {
-                    Toast.makeText(MainActivity.this, itemId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "cart", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navFavourite) {
-                    Toast.makeText(MainActivity.this, itemId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "favourite", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navOnGoing) {
-                    Toast.makeText(MainActivity.this, itemId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "onGoing", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navHistory) {
-                    Toast.makeText(MainActivity.this, itemId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "history", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navFeedback) {
-                    Toast.makeText(MainActivity.this, itemId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "feedback", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navTnc) {
-                    Toast.makeText(MainActivity.this, itemId, Toast.LENGTH_SHORT).show();
-                } else if (itemId == R.id.navFeedback) {
-                    Toast.makeText(MainActivity.this, itemId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "terms and conditions", Toast.LENGTH_SHORT).show();
+                } else if (itemId == R.id.navContactUs) {
+                    Toast.makeText(MainActivity.this, "contact us", Toast.LENGTH_SHORT).show();
                 }
                 drawerLayout.close();
                 

@@ -17,6 +17,7 @@
             layout="@layout/activity_header"/>
 
         <include
+            android:id="@+id/scene"
             layout="@layout/activity_home"/>
 
     </LinearLayout>
