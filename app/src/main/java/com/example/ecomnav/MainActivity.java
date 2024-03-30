@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -45,9 +46,10 @@ public class MainActivity extends AppCompatActivity {
                 int itemId = item.getItemId();
 
                 if (itemId == R.id.navProfile) {
-                    Toast.makeText(MainActivity.this, "profile", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navHome) {
-                    Toast.makeText(MainActivity.this, "home", Toast.LENGTH_SHORT).show();
+                    // Nothing to do
                 } else if (itemId == R.id.navCart) {
                     Toast.makeText(MainActivity.this, "cart", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navFavourite) {
