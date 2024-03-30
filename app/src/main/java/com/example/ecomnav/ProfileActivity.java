@@ -55,9 +55,11 @@ public class ProfileActivity extends AppCompatActivity {
                 } else if (itemId == R.id.navFavourite) {
                     Toast.makeText(ProfileActivity.this, "favourite", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navOnGoing) {
-                    Toast.makeText(ProfileActivity.this, "onGoing", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ProfileActivity.this, OrderActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navHistory) {
-                    Toast.makeText(ProfileActivity.this, "history", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ProfileActivity.this, HistoryActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navFeedback) {
                     Toast.makeText(ProfileActivity.this, "feedback", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navTnc) {
