@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ContactActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ImageButton buttonDrawerToggle;
     NavigationView navigationView;
@@ -24,12 +24,12 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_feedback);
 
         drawerLayout = findViewById(R.id.drawerLayout);
         buttonDrawerToggle = findViewById(R.id.buttonDrawerToggle);
         navigationView = findViewById(R.id.navigationView);
-        currentSceneItem = navigationView.getMenu().findItem(R.id.navProfile);
+        currentSceneItem = navigationView.getMenu().findItem(R.id.navContactUs);
 
         currentSceneItem.setChecked(true);
         currentSceneItem.getIcon().setColorFilter(ContextCompat.getColor(this, android.R.color.darker_gray), PorterDuff.Mode.SRC_IN);
@@ -46,29 +46,29 @@ public class ProfileActivity extends AppCompatActivity {
                 int itemId = item.getItemId();
 
                 if (itemId == R.id.navProfile) {
-                    // Nothing to do
+                    Intent intent = new Intent(ContactActivity.this, ProfileActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navHome) {
-                    Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+                    Intent intent = new Intent(ContactActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navCart) {
-                    Toast.makeText(ProfileActivity.this, "cart", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ContactActivity.this, "cart", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navFavourite) {
-                    Toast.makeText(ProfileActivity.this, "favourite", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ContactActivity.this, "favourite", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navOnGoing) {
-                    Intent intent = new Intent(ProfileActivity.this, OrderActivity.class);
+                    Intent intent = new Intent(ContactActivity.this, OrderActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navHistory) {
-                    Intent intent = new Intent(ProfileActivity.this, HistoryActivity.class);
+                    Intent intent = new Intent(ContactActivity.this, HistoryActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navFeedback) {
-                    Intent intent = new Intent(ProfileActivity.this, FeedbackActivity.class);
+                    Intent intent = new Intent(ContactActivity.this, FeedbackActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navTnc) {
-                    Intent intent = new Intent(ProfileActivity.this, TermsConditionActivity.class);
+                    Intent intent = new Intent(ContactActivity.this, TermsConditionActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navContactUs) {
-                    Intent intent = new Intent(ProfileActivity.this, ContactActivity.class);
-                    startActivity(intent);
+                    // Nothing to do
                 }
                 drawerLayout.close();
 

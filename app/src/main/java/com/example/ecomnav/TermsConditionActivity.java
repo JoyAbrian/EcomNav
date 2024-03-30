@@ -67,7 +67,8 @@ public class TermsConditionActivity extends AppCompatActivity {
                 } else if (itemId == R.id.navTnc) {
                     // Nothing to do
                 } else if (itemId == R.id.navContactUs) {
-                    Toast.makeText(TermsConditionActivity.this, "contact us", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(TermsConditionActivity.this, ContactActivity.class);
+                    startActivity(intent);
                 }
                 drawerLayout.close();
 

@@ -67,7 +67,8 @@ public class OrderActivity extends AppCompatActivity {
                     Intent intent = new Intent(OrderActivity.this, TermsConditionActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navContactUs) {
-                    Toast.makeText(OrderActivity.this, "contact us", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(OrderActivity.this, ContactActivity.class);
+                    startActivity(intent);
                 }
                 drawerLayout.close();
 

@@ -67,7 +67,8 @@ public class FeedbackActivity extends AppCompatActivity {
                     Intent intent = new Intent(FeedbackActivity.this, TermsConditionActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navContactUs) {
-                    Toast.makeText(FeedbackActivity.this, "contact us", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(FeedbackActivity.this, ContactActivity.class);
+                    startActivity(intent);
                 }
                 drawerLayout.close();
 

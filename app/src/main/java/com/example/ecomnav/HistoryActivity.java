@@ -67,7 +67,8 @@ public class HistoryActivity extends AppCompatActivity {
                     Intent intent = new Intent(HistoryActivity.this, TermsConditionActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navContactUs) {
-                    Toast.makeText(HistoryActivity.this, "contact us", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(HistoryActivity.this, ContactActivity.class);
+                    startActivity(intent);
                 }
                 drawerLayout.close();
 
