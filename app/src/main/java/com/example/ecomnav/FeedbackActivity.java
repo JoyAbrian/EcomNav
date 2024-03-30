@@ -55,7 +55,8 @@ public class FeedbackActivity extends AppCompatActivity {
                     Intent intent = new Intent(FeedbackActivity.this, CartActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navFavourite) {
-                    Toast.makeText(FeedbackActivity.this, "favourite", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(FeedbackActivity.this, FavouriteActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navOnGoing) {
                     Intent intent = new Intent(FeedbackActivity.this, OrderActivity.class);
                     startActivity(intent);

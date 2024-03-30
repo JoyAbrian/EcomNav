@@ -54,7 +54,8 @@ public class CartActivity extends AppCompatActivity {
                 } else if (itemId == R.id.navCart) {
                     // Nothing to do
                 } else if (itemId == R.id.navFavourite) {
-                    Toast.makeText(CartActivity.this, "favourite", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(CartActivity.this, FavouriteActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navOnGoing) {
                     Intent intent = new Intent(CartActivity.this, OrderActivity.class);
                     startActivity(intent);
