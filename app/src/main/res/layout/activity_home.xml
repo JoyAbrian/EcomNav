@@ -16,12 +16,13 @@
         tools:layout_editor_absoluteY="5dp" />
 
     <LinearLayout
+        android:id="@+id/buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imagePromo"
         android:layout_marginHorizontal="10dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal">
@@ -43,6 +44,25 @@
             android:layout_height="70dp"
             android:layout_marginHorizontal="5dp"
             android:src="@drawable/button_dineIn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttons"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/offer"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/promo2"/>
 
     </LinearLayout>
 </RelativeLayout>
