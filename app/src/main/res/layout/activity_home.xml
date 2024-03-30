@@ -18,28 +18,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@+id/imagePromo"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="70dp"
             android:layout_marginHorizontal="5dp"
-            android:src="@drawable/button_delivery"/>
+            android:src="@drawable/button_delivery" />
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="70dp"
             android:layout_marginHorizontal="5dp"
-            android:src="@drawable/button_takeAway"/>
+            android:src="@drawable/button_takeAway" />
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="70dp"
             android:layout_marginHorizontal="5dp"
-            android:src="@drawable/button_dineIn"/>
+            android:src="@drawable/button_dineIn" />
 
     </LinearLayout>
 </RelativeLayout>
