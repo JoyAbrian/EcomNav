@@ -105,14 +105,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Male"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginEnd="15dp"
                         android:checked="true"/>
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Female"
-                        android:layout_marginEnd="10dp"/>
+                        android:layout_marginEnd="15dp"/>
 
                     <RadioButton
                         android:layout_width="wrap_content"
