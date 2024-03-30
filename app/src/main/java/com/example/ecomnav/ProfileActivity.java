@@ -63,7 +63,8 @@ public class ProfileActivity extends AppCompatActivity {
                 } else if (itemId == R.id.navFeedback) {
                     Toast.makeText(ProfileActivity.this, "feedback", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navTnc) {
-                    Toast.makeText(ProfileActivity.this, "terms and conditions", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ProfileActivity.this, TermsConditionActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navContactUs) {
                     Toast.makeText(ProfileActivity.this, "contact us", Toast.LENGTH_SHORT).show();
                 }

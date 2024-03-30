@@ -63,7 +63,8 @@ public class HistoryActivity extends AppCompatActivity {
                 } else if (itemId == R.id.navFeedback) {
                     Toast.makeText(HistoryActivity.this, "feedback", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navTnc) {
-                    Toast.makeText(HistoryActivity.this, "terms and conditions", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(HistoryActivity.this, TermsConditionActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navContactUs) {
                     Toast.makeText(HistoryActivity.this, "contact us", Toast.LENGTH_SHORT).show();
                 }
