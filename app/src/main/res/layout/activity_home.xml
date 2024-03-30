@@ -20,22 +20,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/imagePromo"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="20dp">
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp">
 
         <ImageView
-            android:layout_width="140dp"
+            android:layout_width="120dp"
             android:layout_height="70dp"
+            android:layout_marginHorizontal="5dp"
             android:src="@drawable/button_delivery"/>
 
         <ImageView
-            android:layout_width="140dp"
+            android:layout_width="120dp"
             android:layout_height="70dp"
-            android:src="@drawable/button_delivery"/>
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/button_takeAway"/>
 
         <ImageView
-            android:layout_width="140dp"
+            android:layout_width="120dp"
             android:layout_height="70dp"
+            android:layout_marginHorizontal="5dp"
             android:src="@drawable/button_delivery"/>
 
     </LinearLayout>
