@@ -61,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navFeedback) {
-                    Toast.makeText(MainActivity.this, "feedback", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, FeedbackActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navTnc) {
                     Intent intent = new Intent(MainActivity.this, TermsConditionActivity.class);
                     startActivity(intent);

@@ -61,7 +61,8 @@ public class HistoryActivity extends AppCompatActivity {
                 } else if (itemId == R.id.navHistory) {
                     // Nothing to do
                 } else if (itemId == R.id.navFeedback) {
-                    Toast.makeText(HistoryActivity.this, "feedback", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(HistoryActivity.this, FeedbackActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navTnc) {
                     Intent intent = new Intent(HistoryActivity.this, TermsConditionActivity.class);
                     startActivity(intent);

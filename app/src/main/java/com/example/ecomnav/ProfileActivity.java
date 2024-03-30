@@ -61,7 +61,8 @@ public class ProfileActivity extends AppCompatActivity {
                     Intent intent = new Intent(ProfileActivity.this, HistoryActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navFeedback) {
-                    Toast.makeText(ProfileActivity.this, "feedback", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ProfileActivity.this, FeedbackActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navTnc) {
                     Intent intent = new Intent(ProfileActivity.this, TermsConditionActivity.class);
                     startActivity(intent);
