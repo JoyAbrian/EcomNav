@@ -56,7 +56,8 @@ public class HistoryActivity extends AppCompatActivity {
                 } else if (itemId == R.id.navFavourite) {
                     Toast.makeText(HistoryActivity.this, "favourite", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navOnGoing) {
-                    Toast.makeText(HistoryActivity.this, "onGoing", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(HistoryActivity.this, OrderActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navHistory) {
                     // Nothing to do
                 } else if (itemId == R.id.navFeedback) {
