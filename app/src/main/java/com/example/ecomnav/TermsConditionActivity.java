@@ -52,7 +52,8 @@ public class TermsConditionActivity extends AppCompatActivity {
                     Intent intent = new Intent(TermsConditionActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navCart) {
-                    Toast.makeText(TermsConditionActivity.this, "cart", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(TermsConditionActivity.this, CartActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navFavourite) {
                     Toast.makeText(TermsConditionActivity.this, "favourite", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navOnGoing) {

@@ -51,7 +51,8 @@ public class ProfileActivity extends AppCompatActivity {
                     Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navCart) {
-                    Toast.makeText(ProfileActivity.this, "cart", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ProfileActivity.this, CartActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navFavourite) {
                     Toast.makeText(ProfileActivity.this, "favourite", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.navOnGoing) {
