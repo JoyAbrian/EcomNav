@@ -2,8 +2,10 @@ package com.example.ecomnav;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ImageButton buttonDrawerToggle;
     NavigationView navigationView;
-
+    MenuItem currentSceneItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
         buttonDrawerToggle = findViewById(R.id.buttonDrawerToggle);
         navigationView = findViewById(R.id.navigationView);
+        currentSceneItem = navigationView.getMenu().findItem(R.id.navHome);
 
+        currentSceneItem.setChecked(true);
+        currentSceneItem.getIcon().setColorFilter(ContextCompat.getColor(this, android.R.color.darker_gray), PorterDuff.Mode.SRC_IN);
         buttonDrawerToggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,9 +64,10 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "contact us", Toast.LENGTH_SHORT).show();
                 }
                 drawerLayout.close();
-                
+
                 return false;
             }
         });
+
     }
 }
