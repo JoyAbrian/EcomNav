@@ -61,7 +61,8 @@ public class OrderActivity extends AppCompatActivity {
                     Intent intent = new Intent(OrderActivity.this, HistoryActivity.class);
                     startActivity(intent);
                 } else if (itemId == R.id.navFeedback) {
-                    Toast.makeText(OrderActivity.this, "feedback", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(OrderActivity.this, FeedbackActivity.class);
+                    startActivity(intent);
                 } else if (itemId == R.id.navTnc) {
                     Intent intent = new Intent(OrderActivity.this, TermsConditionActivity.class);
                     startActivity(intent);
