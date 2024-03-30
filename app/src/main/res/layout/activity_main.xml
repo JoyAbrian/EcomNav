@@ -16,7 +16,7 @@
         <include
             layout="@layout/activity_header"/>
 
-        <RelativeLayout 
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -82,7 +82,9 @@
                     android:layout_gravity="center"/>
 
             </LinearLayout>
+            
         </RelativeLayout>
+
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
