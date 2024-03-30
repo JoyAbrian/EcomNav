@@ -188,6 +188,39 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/birthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_below="@+id/phoneNumber">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birthdate"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="start"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/custom_input"
+                    android:text="  2004-10-05"
+                    android:textSize="18dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:drawableStart="@drawable/round_birthdate"
+                    android:paddingHorizontal="10dp"
+                    android:clickable="false"/>
+
+            </LinearLayout>
+
         </RelativeLayout>
 
     </LinearLayout>
